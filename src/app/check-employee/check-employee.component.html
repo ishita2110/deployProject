@@ -1,0 +1,5 @@
+<input [(ngModel)]="employeeName" placeholder="Enter employee name">
+<button (click)="checkEmployee()">Check Employee</button>
+<p *ngIf="exists !== null">
+  Employee {{ exists ? 'exists' : 'does not exist' }} in the system.
+</p>
